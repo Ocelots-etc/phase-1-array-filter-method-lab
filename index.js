@@ -7,7 +7,9 @@ function findMatching(drivers, string) {
 function fuzzyMatch(drivers, searchTerms){
   //** arguements are an array of drivers' names and a string  */
   //** returns all drivers whoe names begin with the provided letters */
-  
+  const newDriversArray = drivers.filter(driver => driver.startsWith(searchTerms))
+  return newDriversArray
+
 }
 
 function matchName(){
