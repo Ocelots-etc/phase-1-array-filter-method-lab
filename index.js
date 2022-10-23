@@ -12,9 +12,11 @@ function fuzzyMatch(drivers, searchTerms){
 
 }
 
-function matchName(){
+function matchName(drivers, searchTerms){
   //** arguments are an array of driver objects and a string as arguments */
   //** driver object properties: name and hometown */
   //** returns element if name property matches string argument */
+  const newDriversArray = drivers.filter(driver => driver.name === searchTerms)
+  return newDriversArray
 }
 
